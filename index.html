@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PAI-IC · Plano de execução das 18 frentes</title>
+<meta name="description" content="Apresentação à equipa do PAI-IC da ULS Loures-Odivelas: uma frente por slide, o que vamos fazer, quem, quando e a mensagem de cada frente; cronograma dezembro 2026 – julho 2027.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reset.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/white.min.css" id="theme">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14213D;--muted:#5B6474;--paper:#FBF8F2;--line:#E8E2D6;
+ --r-background-color:#FBF8F2;--r-main-font:'Inter',system-ui,sans-serif;--r-heading-font:'Inter',system-ui,sans-serif;
+ --r-main-color:#14213D;--r-heading-color:#14213D;--r-main-font-size:30px;--r-heading-text-transform:none;--r-heading-font-weight:800;--r-heading-letter-spacing:-.015em}
+html,body{background:var(--paper)}
+.reveal .slides{text-align:left}
+.reveal .slides section{padding:0 18px;box-sizing:border-box}
+.kick{font-size:.5em;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#B07D00;margin-bottom:.5em}
+.reveal h2.h{font-size:1.45em;margin:0 0 .5em;line-height:1.12}
+/* cover */
+.cover .cv-band{display:flex;gap:6px;margin-bottom:1.1em}.cover .cv-band i{flex:1;height:14px;border-radius:7px}
+.reveal h1.big{font-size:2.5em;font-weight:900;line-height:1.02;letter-spacing:-.03em;margin:.15em 0 .3em}
+.reveal h1.big span{background:linear-gradient(90deg,#0E9F9A,#2563EB 30%,#7C3AED 55%,#DB2777 78%,#F26B1D);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cover .sub{font-size:.95em;color:var(--muted);margin:0}
+.cover .by{font-size:.55em;color:var(--muted);margin-top:2.2em}
+.cover.end h1.big{font-size:2.2em}
+/* tiles */
+.tiles{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.tile{background:#fff;border:1px solid var(--line);border-top:6px solid var(--c);border-radius:14px;padding:10px 12px;font-size:.52em;line-height:1.22;min-height:100px;display:flex;flex-direction:column;gap:4px}
+.tile b{font-size:1.9em;font-weight:900;color:var(--c);line-height:1}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:.8em}
+.lg{font-size:.48em;font-weight:600;color:var(--ink);display:inline-flex;align-items:center;gap:8px}
+.lg::before{content:'';width:14px;height:14px;border-radius:4px;background:var(--c)}
+.note{font-size:.5em;color:var(--muted);margin-top:.9em}
+/* front slide */
+.fs{display:grid;grid-template-columns:330px 1fr;gap:30px;align-items:stretch}
+.panel{background:var(--c);border-radius:26px;padding:26px 26px 22px;color:#fff;display:flex;flex-direction:column;min-height:520px;box-sizing:border-box;position:relative;overflow:hidden}
+.panel::after{content:'';position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.12)}
+.ptheme{font-size:.46em;font-weight:800;letter-spacing:.12em;text-transform:uppercase;opacity:.9}
+.num{font-size:4.6em;font-weight:900;line-height:.95;letter-spacing:-.05em;margin-top:.15em}
+.ttl{font-size:1.02em;font-weight:800;line-height:1.15;margin-top:.25em}
+.phase{margin-top:auto;font-size:.5em;font-weight:700;background:rgba(255,255,255,.2);border-radius:999px;padding:.35em .9em;align-self:flex-start;position:relative;z-index:1}
+.body{display:flex;flex-direction:column}
+.lbl{font-size:.48em;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--c);margin-bottom:.35em}
+.reveal ul.todo{list-style:none;margin:0;padding:0;font-size:.7em;line-height:1.32}
+.reveal ul.todo li{list-style:none;position:relative;padding:.42em 0 .42em 1.5em;border-bottom:1px solid var(--line);margin:0}
+.reveal ul.todo li::before{content:'';position:absolute;left:0;top:.72em;width:.62em;height:.62em;border-radius:50%;background:var(--c)}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:.7em}
+.meta div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:.5em .85em;font-size:.56em;line-height:1.25}
+.meta span{display:block;font-size:.82em;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.15em}
+.meta b{color:var(--ink);font-weight:700}
+.msg{margin-top:auto;font-size:1.12em!important;position:relative;background:color-mix(in srgb,var(--c) 12%,#fff);border-left:10px solid var(--c);border-radius:16px;padding:.5em .8em .5em 1.6em;font-size:1.02em;font-weight:900;line-height:1.12;color:var(--ink);letter-spacing:-.01em}
+.msg .q{position:absolute;left:.25em;top:-.05em;font-size:1.8em;color:var(--c);line-height:1}
+/* gantt + msgs */
+.gantt{background:#fff;border:1px solid var(--line);border-radius:18px;padding:12px 10px}
+.msgs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px 14px}
+.mm{font-size:.46em;font-weight:700;line-height:1.2;color:var(--ink);background:#fff;border:1px solid var(--line);border-left:6px solid var(--c);border-radius:10px;padding:.5em .7em;display:flex;gap:.6em;align-items:baseline}
+.mm b{color:var(--c);font-weight:900}
+.siglas{margin-top:10px;padding-top:6px;border-top:1px solid var(--line);font-size:.38em;color:var(--muted);line-height:1.35}
+.siglas b{color:var(--ink);font-weight:600}
+.reveal .progress{color:#DB2777}.reveal .controls{color:#2563EB}
+.reveal .slide-number{background:transparent;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section class="cover" data-timing="30">
+ <div class="cv-band"><i style="background:#7C3AED"></i><i style="background:#F26B1D"></i><i style="background:#2563EB"></i><i style="background:#0E9F9A"></i><i style="background:#0E9F9A"></i><i style="background:#F26B1D"></i><i style="background:#2563EB"></i><i style="background:#2563EB"></i><i style="background:#DB2777"></i><i style="background:#7C3AED"></i><i style="background:#F26B1D"></i><i style="background:#7C3AED"></i><i style="background:#16A34A"></i><i style="background:#16A34A"></i><i style="background:#0E9F9A"></i><i style="background:#DB2777"></i><i style="background:#DB2777"></i><i style="background:#16A34A"></i></div>
+ <div class="kick">PAI-IC · ULS Loures-Odivelas · Projeto vencedor das Bolsas Mais Valor em Saúde</div>
+ <h1 class="big">Plano de execução<br><span>18 frentes de trabalho</span></h1>
+ <p class="sub">O que vamos fazer, quem faz e quando — dezembro 2026 a julho 2027</p>
+ <p class="by">Reunião da equipa PAI-IC · Dr. Luís Martins</p>
+ <aside class="notes">Abertura: uma frente por slide, cada uma termina com a sua mensagem.</aside>
+</section>
+
+<section data-timing="40">
+ <div class="kick">Visão de conjunto</div>
+ <h2 class="h">18 frentes em 6 temas e 3 fases</h2>
+ <div class="tiles"><div class="tile" style="--c:#7C3AED"><b>01</b><span>Formação para médicos e enfermeiros</span></div><div class="tile" style="--c:#F26B1D"><b>02</b><span>Folhetos e circuito de aprovação</span></div><div class="tile" style="--c:#2563EB"><b>03</b><span>Cardiologia e IC avançada</span></div><div class="tile" style="--c:#0E9F9A"><b>04</b><span>Revisão dos 56 processos</span></div><div class="tile" style="--c:#0E9F9A"><b>05</b><span>Registo tipificado SOAP</span></div><div class="tile" style="--c:#F26B1D"><b>06</b><span>Plano Individual de Cuidados</span></div><div class="tile" style="--c:#2563EB"><b>07</b><span>Nota de alta e transição de cuidados</span></div><div class="tile" style="--c:#2563EB"><b>08</b><span>Canal de contacto direto</span></div><div class="tile" style="--c:#DB2777"><b>09</b><span>Escalada na Ramada e USF Magnólia</span></div><div class="tile" style="--c:#7C3AED"><b>10</b><span>Encontros mensais Hospital–CSP</span></div><div class="tile" style="--c:#F26B1D"><b>11</b><span>Serviço social, farmácia e prescrição social</span></div><div class="tile" style="--c:#7C3AED"><b>12</b><span>GPT documental</span></div><div class="tile" style="--c:#16A34A"><b>13</b><span>Primeiro artigo científico</span></div><div class="tile" style="--c:#16A34A"><b>14</b><span>Consultoria da bolsa</span></div><div class="tile" style="--c:#0E9F9A"><b>15</b><span>Dashboard e indicadores</span></div><div class="tile" style="--c:#DB2777"><b>16</b><span>Materiais e equipamentos</span></div><div class="tile" style="--c:#DB2777"><b>17</b><span>Recursos humanos para 500 utentes</span></div><div class="tile" style="--c:#16A34A"><b>18</b><span>Financiamento</span></div></div>
+ <div class="legend"><span class="lg" style="--c:#0E9F9A">Conhecer e registar</span><span class="lg" style="--c:#2563EB">Articular hospital e CSP</span><span class="lg" style="--c:#F26B1D">O doente no centro</span><span class="lg" style="--c:#7C3AED">Aprender juntos</span><span class="lg" style="--c:#DB2777">Crescer</span><span class="lg" style="--c:#16A34A">Provar o valor</span></div>
+ <p class="note">Montar · dez–jan &nbsp;→&nbsp; Consolidar · fev–mai &nbsp;→&nbsp; Escalar · jun–jul &nbsp;·&nbsp; ponto de decisão: <b>relatório dos 6 meses, 11 de maio de 2027</b></p>
+ <aside class="notes">Mostrar as cores: cada tema tem a sua. As frentes seguem por número.</aside>
+</section>
+
+<section data-timing="26" style="--c:#7C3AED">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">Aprender juntos</div>
+   <div class="num">01</div>
+   <div class="ttl">Formação para médicos e enfermeiros</div>
+   <div class="phase">Consolidar · fev–mai</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>Tronco comum interno de 2 horas em dezembro, dado pela equipa do PAI</li><li>Formação externa com a Prof.ª Cândida Fonseca ou, em alternativa, o Prof. Ricardo Fontes-Carvalho (Cardiovascular Academy da SPC)</li><li>Tronco comum para todos e módulos próprios para médicos e para enfermeiros</li><li>Formato híbrido no Auditório do HBA, com Teams e gravação autorizada</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Luís Martins + Direção Clínica</b></div><div><span>Quando</span><b>Data fixada até 15 jan 2027</b></div></div>
+   <div class="msg"><span class="q">“</span>Uma só linguagem, da USF ao hospital.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 1: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#F26B1D">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">O doente no centro</div>
+   <div class="num">02</div>
+   <div class="ttl">Folhetos e circuito de aprovação</div>
+   <div class="phase">Consolidar · fev–mai</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>Folheto A: a sua insuficiência cardíaca, sistema semáforo, tabela de peso e pauta de diuréticos personalizada</li><li>Folheto B: jornada digital, com os contactos por ordem de uso (equipa à distância, USF, Hospital de Dia, SNS 24, 112)</li><li>Linguagem simples, letra grande, pictogramas; testados com 5 utentes</li><li>Aprovação em paralelo: Gabinete de Comunicação, EPD, Direção Clínica e CA</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Tiago Condeço, Isabel Ribeiro, Clara Peixoto</b></div><div><span>Quando</span><b>Aprovados até 28 fev 2027</b></div></div>
+   <div class="msg"><span class="q">“</span>O doente leva o PAI para casa.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 2: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#2563EB">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">Articular hospital e CSP</div>
+   <div class="num">03</div>
+   <div class="ttl">Cardiologia e IC avançada</div>
+   <div class="phase">Montar · dez–jan</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>Reunião de 60 minutos no HBA com a Cardiologia, a Medicina Interna e a ECSCP</li><li>Protocolo de referenciação em IC avançada aprovado e codificado</li><li>Cardiologista de referência para o PAI e centro de IC avançada definido</li><li>«I NEED HELP» e Regra dos 3 em cada revisão e em cada alta</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Olga Pereira + cardiologistas da ULSLOD</b></div><div><span>Quando</span><b>Reunião em dezembro · aprovado até 31 jan</b></div></div>
+   <div class="msg"><span class="q">“</span>Referenciar cedo é cuidar melhor.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 3: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#0E9F9A">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">Conhecer e registar</div>
+   <div class="num">04</div>
+   <div class="ttl">Revisão dos 56 processos</div>
+   <div class="phase">Montar · dez–jan</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>7 processos por semana, em par médico-enfermeiro, cada equipa com os seus utentes</li><li>Primeiro quem teve internamento ou SU por IC, NYHA III–IV ou NT-proBNP mais alto</li><li>Grelha de inclusão: FEVE, fenótipo, estádio, NYHA, terapêutica fundamental, «I NEED HELP»</li><li>Cada revisão termina com consulta de inclusão marcada ou exames pedidos</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Médicos e enfermeiros da USF da Ramada</b></div><div><span>Quando</span><b>1 dez 2026 a 30 jan 2027</b></div></div>
+   <div class="msg"><span class="q">“</span>Conhecer cada um dos 56 pelo nome.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 4: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#0E9F9A">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">Conhecer e registar</div>
+   <div class="num">05</div>
+   <div class="ttl">Registo tipificado SOAP</div>
+   <div class="phase">Montar · dez–jan</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>SOAP dos CSP pronto e em uso</li><li>SOAP hospitalar com perfil hemodinâmico, fase da descompensação, checklist e LACE</li><li>Conjunto mínimo comum: fenótipo, etiologia (única, múltipla ou desconhecida com motivo), NYHA, FMT, AMT, GDIT, scores e inquéritos</li><li>KCCQ-12, PHQ-9 e EQ-5D-5L parametrizados no SClínico</li></ul>
+   <div class="meta"><div><span>Quem</span><b>CSP: Catarina Santos, Bruno Pedrosa, Tiago Condeço · Hospital: Ana I. Reis, Pedro Moules, Gabriel Ferreira</b></div><div><span>Quando</span><b>Versão hospitalar até 31 jan 2027</b></div></div>
+   <div class="msg"><span class="q">“</span>Registar igual para medir igual.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 5: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#F26B1D">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">O doente no centro</div>
+   <div class="num">06</div>
+   <div class="ttl">Plano Individual de Cuidados</div>
+   <div class="phase">Consolidar · fev–mai</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>O plano escrito, acordado com o utente e o cuidador: o que se quer alcançar, quem faz o quê, quando se revê</li><li>Objetivo nas palavras do doente, metas clínicas, pauta de diuréticos, semáforo e calendário de contactos</li><li>Elaborado na inclusão pelo enfermeiro de família e validado pelo médico</li><li>Revisto a cada 6 meses e depois de cada alta; o utente leva uma cópia de uma página</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Anabela Caseiro + Isabel Ribeiro</b></div><div><span>Quando</span><b>Modelo até 15 jan 2027</b></div></div>
+   <div class="msg"><span class="q">“</span>Um plano por pessoa, escrito com ela.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 6: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#2563EB">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">Articular hospital e CSP</div>
+   <div class="num">07</div>
+   <div class="ttl">Nota de alta e transição de cuidados</div>
+   <div class="phase">Montar · dez–jan</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>Nota médica com 12 pontos obrigatórios: precipitante, fenótipo, peso seco, análises, terapêutica e plano das 6 semanas</li><li>Nota de enfermagem com 8 pontos: ensinos validados, semáforo, cuidador, necessidades e contacto em 72 h</li><li>Base: checklist pré-alta do Núcleo de Estudos de IC da SPMI</li><li>Nota enviada no próprio dia e receção confirmada pela USF</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Ana I. Reis + Rogério de Matos</b></div><div><span>Quando</span><b>Modelos até 31 jan 2027</b></div></div>
+   <div class="msg"><span class="q">“</span>Nenhuma alta sem passagem de testemunho.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 7: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#2563EB">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">Articular hospital e CSP</div>
+   <div class="num">08</div>
+   <div class="ttl">Canal de contacto direto</div>
+   <div class="phase">Montar · dez–jan</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>Equipa Teams «PAI-IC — Clínico» para casos, pedidos ao Hospital de Dia e dúvidas de titulação</li><li>Canal de logística separado, para horários e lembretes</li><li>Resposta em 1 dia útil; urgências sempre por telefone</li><li>Uma linha por doente; decisões registadas no SClínico no mesmo dia</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Paulo Barreto + Departamento de Informática da ULSLOD</b></div><div><span>Quando</span><b>Ativo até 31 dez 2026</b></div></div>
+   <div class="msg"><span class="q">“</span>Um canal seguro, resposta num dia útil.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 8: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#DB2777">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">Crescer</div>
+   <div class="num">09</div>
+   <div class="ttl">Escalada na Ramada e USF Magnólia</div>
+   <div class="phase">Escalar · jun–jul</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>Vaga 1: os 56 utentes codificados da USF da Ramada</li><li>Vaga 2, a partir de abril: deteção ativa de quem tem IC sem diagnóstico</li><li>Vaga 3, em junho: entrada da USF Magnólia com o mesmo SOAP, a mesma grelha e o mesmo canal</li><li>Novas unidades e altas do HBA para chegar aos 500 utentes</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Luís Martins + Diogo Geadas</b></div><div><span>Quando</span><b>Magnólia a partir de 8 jun 2027</b></div></div>
+   <div class="msg"><span class="q">“</span>O que funciona na Ramada chega a toda a ULS.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 9: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#7C3AED">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">Aprender juntos</div>
+   <div class="num">10</div>
+   <div class="ttl">Encontros mensais Hospital–CSP</div>
+   <div class="phase">Consolidar · fev–mai</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>2.ª terça-feira de cada mês, 11h30–12h30, alternando HBA e USF da Ramada, com Teams</li><li>Pendências · indicadores · pílula formativa · casos complexos · decisões</li><li>15 minutos de formação em cada encontro, com um tema por mês</li><li>Casos complexos enviados com 48 horas de antecedência</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Olga Pereira + Fátima Franco</b></div><div><span>Quando</span><b>Próximo encontro a 15 dez 2026</b></div></div>
+   <div class="msg"><span class="q">“</span>Aprender juntos, todos os meses.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 10: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#F26B1D">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">O doente no centro</div>
+   <div class="num">11</div>
+   <div class="ttl">Serviço social, farmácia e prescrição social</div>
+   <div class="phase">Consolidar · fev–mai</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>Serviço social quando a escala de Gijón, a de Zarit ou o isolamento o indicam</li><li>Reconciliação terapêutica pelo farmacêutico em cada alta por IC</li><li>Revisão da medicação nos polimedicados e nos que têm má adesão</li><li>Prescrição social com os recursos comunitários de Loures e Odivelas</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Serviço Social e Farmácia da ULSLOD + Direção Clínica</b></div><div><span>Quando</span><b>Integrados até março 2027</b></div></div>
+   <div class="msg"><span class="q">“</span>Cuidar também do que não se prescreve.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 11: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#7C3AED">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">Aprender juntos</div>
+   <div class="num">12</div>
+   <div class="ttl">GPT documental</div>
+   <div class="phase">Consolidar · fev–mai</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>Dr. Pedro Moules: módulos hospitalares, descompensação e IC avançada</li><li>Dr. Gabriel Ferreira: tratamento crónico, comorbilidades e scores</li><li>Base de conhecimento com os documentos do PAI e 12 testes de aceitação</li><li>Uso sem dados identificáveis de doentes, com validação clínica final</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Pedro Moules, Gabriel Ferreira, Luís Martins · em colaboração com a UpHill</b></div><div><span>Quando</span><b>Em teste até 15 fev 2027</b></div></div>
+   <div class="msg"><span class="q">“</span>As guidelines a um clique, sempre com a fonte.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 12: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#16A34A">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">Provar o valor</div>
+   <div class="num">13</div>
+   <div class="ttl">Primeiro artigo científico</div>
+   <div class="phase">Escalar · jun–jul</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>Desenho do PAI e primeiros 6 meses de implementação</li><li>Guia de reporte SQUIRE 2.0 ou StaRI</li><li>Revistas: Acta Médica Portuguesa, Revista Portuguesa de Cardiologia, Medicina Interna, International Journal of Integrated Care</li><li>Autores dos dois níveis de cuidados e das duas profissões</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Toda a equipa PAI-IC</b></div><div><span>Quando</span><b>Submissão até 30 jun 2027</b></div></div>
+   <div class="msg"><span class="q">“</span>O que fazemos merece ser lido.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 13: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#16A34A">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">Provar o valor</div>
+   <div class="num">14</div>
+   <div class="ttl">Consultoria da bolsa</div>
+   <div class="phase">Montar · dez–jan</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>Provar o valor (40%): custo por doente ao longo do ciclo e custo por QALY</li><li>Ligar os dados (25%): extração automática para o dashboard</li><li>Replicar (20%): kit para outras USF e ULS</li><li>Comparar (15%): indicadores alinhados com o ICHOM e benchmarking</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Luís Martins, Olga Pereira, Ricardo Cunha</b></div><div><span>Quando</span><b>Âmbito a 12 dez · protocolo até 31 jan</b></div></div>
+   <div class="msg"><span class="q">“</span>50 000 € para provar o valor.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 14: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#0E9F9A">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">Conhecer e registar</div>
+   <div class="num">15</div>
+   <div class="ttl">Dashboard e indicadores</div>
+   <div class="phase">Montar · dez–jan</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>Um responsável pelo painel e quatro fontes, cada uma com quem recolhe</li><li>Atualização até à 1.ª sexta-feira de cada mês, a tempo da reunião</li><li>Ficha técnica fixa para cada indicador</li><li>Publicado só com dados agregados</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Ricardo Cunha</b></div><div><span>Quando</span><b>Em funcionamento a partir de dezembro</b></div></div>
+   <div class="msg"><span class="q">“</span>Os números contam a nossa história, todos os meses.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 15: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#DB2777">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">Crescer</div>
+   <div class="num">16</div>
+   <div class="ttl">Materiais e equipamentos</div>
+   <div class="phase">Consolidar · fev–mai</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>Inventário de todos os gabinetes do PAI</li><li>CSP: balança calibrada, braçadeiras S a XL, oxímetro, material de teleconsulta</li><li>Hospital de Dia: cadeirões, bombas perfusoras, monitor, ECG</li><li>Balanças e esfigmomanómetros para empréstimo a doentes</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Tiago Condeço + Clara Peixoto</b></div><div><span>Quando</span><b>Inventário até 31 jan 2027</b></div></div>
+   <div class="msg"><span class="q">“</span>Cada gabinete pronto para a IC.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 16: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#DB2777">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">Crescer</div>
+   <div class="num">17</div>
+   <div class="ttl">Recursos humanos para 500 utentes</div>
+   <div class="phase">Escalar · jun–jul</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>Cerca de 2,6 ETC de enfermagem e 1,1 ETC médico</li><li>Nos CSP: 5 a 9 horas semanais de enfermagem e 4 a 6 horas médicas por USF</li><li>No hospital: Hospital de Dia, Consulta de IC, ecocardiografia, farmácia e serviço social</li><li>Modelo revisto em maio com os números reais do piloto</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Olga Pereira + Luís Martins</b></div><div><span>Quando</span><b>Proposta ao CA até 31 mar 2027</b></div></div>
+   <div class="msg"><span class="q">“</span>500 utentes, equipa à medida.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 17: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="26" style="--c:#16A34A">
+ <div class="fs">
+  <div class="panel">
+   <div class="ptheme">Provar o valor</div>
+   <div class="num">18</div>
+   <div class="ttl">Financiamento</div>
+   <div class="phase">Escalar · jun–jul</div>
+  </div>
+  <div class="body">
+   <div class="lbl">O que vamos fazer</div>
+   <ul class="todo"><li>PAI no plano de ação e na contratualização de 2027</li><li>Proposta de projeto-piloto à DE-SNS com os resultados de maio</li><li>Prémio Healthcare Excellence, Prémio Inovação em Saúde, Fundação «la Caixa»</li><li>Fundos europeus em consórcio com parceiros académicos</li></ul>
+   <div class="meta"><div><span>Quem</span><b>Gabinete de Projetos e Inovação da ULSLOD</b></div><div><span>Quando</span><b>Calendário de candidaturas até 31 jan 2027</b></div></div>
+   <div class="msg"><span class="q">“</span>Do prémio ao orçamento.</div>
+  </div>
+ </div>
+ <aside class="notes">Frente 18: ler a mensagem final em voz alta; ~25 segundos.</aside>
+</section>
+<section data-timing="45">
+ <div class="kick">Cronograma</div>
+ <h2 class="h">Dezembro 2026 a julho 2027</h2>
+ <div class="gantt"><svg viewBox='0 0 1180 556' width='100%' style='display:block;max-height:520px' font-family='Inter,system-ui,sans-serif'><line x1='330' x2='330' y1='44' y2='546' stroke='#E5E1D8'/><text x='330' y='32' fill='#6B7280' font-size='15' text-anchor='middle'>dez</text><line x1='435' x2='435' y1='44' y2='546' stroke='#E5E1D8'/><text x='435' y='32' fill='#6B7280' font-size='15' text-anchor='middle'>jan</text><line x1='539' x2='539' y1='44' y2='546' stroke='#E5E1D8'/><text x='539' y='32' fill='#6B7280' font-size='15' text-anchor='middle'>fev</text><line x1='634' x2='634' y1='44' y2='546' stroke='#E5E1D8'/><text x='634' y='32' fill='#6B7280' font-size='15' text-anchor='middle'>mar</text><line x1='738' x2='738' y1='44' y2='546' stroke='#E5E1D8'/><text x='738' y='32' fill='#6B7280' font-size='15' text-anchor='middle'>abr</text><line x1='840' x2='840' y1='44' y2='546' stroke='#E5E1D8'/><text x='840' y='32' fill='#6B7280' font-size='15' text-anchor='middle'>mai</text><line x1='944' x2='944' y1='44' y2='546' stroke='#E5E1D8'/><text x='944' y='32' fill='#6B7280' font-size='15' text-anchor='middle'>jun</text><line x1='1045' x2='1045' y1='44' y2='546' stroke='#E5E1D8'/><text x='1045' y='32' fill='#6B7280' font-size='15' text-anchor='middle'>jul</text><line x1='1150' x2='1150' y1='44' y2='546' stroke='#E5E1D8'/><text x='1150' y='32' fill='#6B7280' font-size='15' text-anchor='middle'>ago</text><line x1='873' x2='873' y1='44' y2='546' stroke='#E0A100' stroke-width='2.5' stroke-dasharray='6 5'/><text x='24' y='71' fill='#14213D' font-size='15' font-weight='500'>Revisão dos 56 processos</text><rect x='330' y='57' width='202' height='18' rx='9' fill='#0E9F9A' fill-opacity='.22' stroke='#0E9F9A' stroke-width='1.6'/><text x='542' y='71' fill='#4B5563' font-size='13'>1 dez – 30 jan</text><text x='24' y='101' fill='#14213D' font-size='15' font-weight='500'>Canal Teams ativo</text><rect x='330' y='87' width='101' height='18' rx='9' fill='#2563EB' fill-opacity='.22' stroke='#2563EB' stroke-width='1.6'/><text x='441' y='101' fill='#4B5563' font-size='13'>1 dez – 31 dez</text><text x='24' y='131' fill='#14213D' font-size='15' font-weight='500'>Tronco comum interno</text><path d='M360 116l10 10l-10 10l-10 -10z' fill='#7C3AED'/><text x='376' y='131' fill='#4B5563' font-size='13' font-weight='400'>10 dez</text><text x='24' y='161' fill='#14213D' font-size='15' font-weight='500'>Reunião com a Cardiologia</text><rect x='330' y='147' width='101' height='18' rx='9' fill='#2563EB' fill-opacity='.22' stroke='#2563EB' stroke-width='1.6'/><text x='441' y='161' fill='#4B5563' font-size='13'>1 dez – 31 dez</text><text x='24' y='191' fill='#14213D' font-size='15' font-weight='500'>Protocolo IC avançada aprovado</text><path d='M536 176l10 10l-10 10l-10 -10z' fill='#2563EB'/><text x='552' y='191' fill='#4B5563' font-size='13' font-weight='400'>31 jan</text><text x='24' y='221' fill='#14213D' font-size='15' font-weight='500'>Protocolo com a consultoria</text><path d='M536 206l10 10l-10 10l-10 -10z' fill='#16A34A'/><text x='552' y='221' fill='#4B5563' font-size='13' font-weight='400'>31 jan</text><text x='24' y='251' fill='#14213D' font-size='15' font-weight='500'>Consultas de inclusão e PIC</text><rect x='377' y='237' width='358' height='18' rx='9' fill='#F26B1D' fill-opacity='.22' stroke='#F26B1D' stroke-width='1.6'/><text x='556' y='251' fill='#14213D' font-size='13' text-anchor='middle'>15 dez – 31 mar</text><text x='24' y='281' fill='#14213D' font-size='15' font-weight='500'>SOAP hospitalar e nota de alta</text><rect x='377' y='267' width='159' height='18' rx='9' fill='#0E9F9A' fill-opacity='.22' stroke='#0E9F9A' stroke-width='1.6'/><text x='546' y='281' fill='#4B5563' font-size='13'>15 dez – 31 jan</text><text x='24' y='311' fill='#14213D' font-size='15' font-weight='500'>GPT documental</text><rect x='445' y='297' width='142' height='18' rx='9' fill='#7C3AED' fill-opacity='.22' stroke='#7C3AED' stroke-width='1.6'/><text x='596' y='311' fill='#4B5563' font-size='13'>4 jan – 15 fev</text><text x='24' y='341' fill='#14213D' font-size='15' font-weight='500'>Folhetos aprovados</text><rect x='377' y='327' width='253' height='18' rx='9' fill='#F26B1D' fill-opacity='.22' stroke='#F26B1D' stroke-width='1.6'/><text x='640' y='341' fill='#4B5563' font-size='13'>15 dez – 28 fev</text><text x='24' y='371' fill='#14213D' font-size='15' font-weight='500'>Formação externa</text><rect x='539' y='357' width='196' height='18' rx='9' fill='#7C3AED' fill-opacity='.22' stroke='#7C3AED' stroke-width='1.6'/><text x='529' y='371' fill='#4B5563' font-size='13' text-anchor='end'>1 fev – 31 mar</text><text x='24' y='401' fill='#14213D' font-size='15' font-weight='500'>Pedido de RH ao CA</text><path d='M735 386l10 10l-10 10l-10 -10z' fill='#DB2777'/><text x='751' y='401' fill='#4B5563' font-size='13' font-weight='400'>31 mar</text><text x='24' y='431' fill='#14213D' font-size='15' font-weight='500'>Deteção ativa na Ramada</text><rect x='738' y='417' width='408' height='18' rx='9' fill='#DB2777' fill-opacity='.22' stroke='#DB2777' stroke-width='1.6'/><text x='728' y='431' fill='#4B5563' font-size='13' text-anchor='end'>1 abr – 31 jul</text><text x='24' y='461' fill='#14213D' font-size='15' font-weight='800'>Relatório dos 6 meses</text><path d='M873 446l10 10l-10 10l-10 -10z' fill='#E0A100'/><text x='889' y='461' fill='#B07D00' font-size='13' font-weight='800'>11 mai</text><text x='24' y='491' fill='#14213D' font-size='15' font-weight='500'>Entrada da USF Magnólia</text><path d='M968 476l10 10l-10 10l-10 -10z' fill='#DB2777'/><text x='984' y='491' fill='#4B5563' font-size='13' font-weight='400'>8 jun</text><text x='24' y='521' fill='#14213D' font-size='15' font-weight='500'>Submissão do 1.º artigo</text><path d='M1042 506l10 10l-10 10l-10 -10z' fill='#16A34A'/><text x='1058' y='521' fill='#4B5563' font-size='13' font-weight='400'>30 jun</text></svg></div>
+ <aside class="notes">A linha dourada é o relatório dos 6 meses.</aside>
+</section>
+
+<section data-timing="40">
+ <div class="kick">As 18 mensagens</div>
+ <h2 class="h">O que levamos desta reunião</h2>
+ <div class="msgs"><div class="mm" style="--c:#7C3AED"><b>01</b>Uma só linguagem, da USF ao hospital.</div><div class="mm" style="--c:#F26B1D"><b>02</b>O doente leva o PAI para casa.</div><div class="mm" style="--c:#2563EB"><b>03</b>Referenciar cedo é cuidar melhor.</div><div class="mm" style="--c:#0E9F9A"><b>04</b>Conhecer cada um dos 56 pelo nome.</div><div class="mm" style="--c:#0E9F9A"><b>05</b>Registar igual para medir igual.</div><div class="mm" style="--c:#F26B1D"><b>06</b>Um plano por pessoa, escrito com ela.</div><div class="mm" style="--c:#2563EB"><b>07</b>Nenhuma alta sem passagem de testemunho.</div><div class="mm" style="--c:#2563EB"><b>08</b>Um canal seguro, resposta num dia útil.</div><div class="mm" style="--c:#DB2777"><b>09</b>O que funciona na Ramada chega a toda a ULS.</div><div class="mm" style="--c:#7C3AED"><b>10</b>Aprender juntos, todos os meses.</div><div class="mm" style="--c:#F26B1D"><b>11</b>Cuidar também do que não se prescreve.</div><div class="mm" style="--c:#7C3AED"><b>12</b>As guidelines a um clique, sempre com a fonte.</div><div class="mm" style="--c:#16A34A"><b>13</b>O que fazemos merece ser lido.</div><div class="mm" style="--c:#16A34A"><b>14</b>50 000 € para provar o valor.</div><div class="mm" style="--c:#0E9F9A"><b>15</b>Os números contam a nossa história, todos os meses.</div><div class="mm" style="--c:#DB2777"><b>16</b>Cada gabinete pronto para a IC.</div><div class="mm" style="--c:#DB2777"><b>17</b>500 utentes, equipa à medida.</div><div class="mm" style="--c:#16A34A"><b>18</b>Do prémio ao orçamento.</div></div>
+ <aside class="notes">Ler duas ou três em voz alta; pedir a cada responsável que confirme a sua data.</aside>
+</section>
+
+<section class="cover end" data-timing="15">
+ <div class="cv-band"><i style="background:#7C3AED"></i><i style="background:#F26B1D"></i><i style="background:#2563EB"></i><i style="background:#0E9F9A"></i><i style="background:#0E9F9A"></i><i style="background:#F26B1D"></i><i style="background:#2563EB"></i><i style="background:#2563EB"></i><i style="background:#DB2777"></i><i style="background:#7C3AED"></i><i style="background:#F26B1D"></i><i style="background:#7C3AED"></i><i style="background:#16A34A"></i><i style="background:#16A34A"></i><i style="background:#0E9F9A"></i><i style="background:#DB2777"></i><i style="background:#DB2777"></i><i style="background:#16A34A"></i></div>
+ <h1 class="big">Montamos em janeiro.<br>Mostramos em maio.<br><span>Escalamos no verão.</span></h1>
+ <p class="sub">Cada frente tem dono e data. Contamos com todos.</p>
+ <aside class="notes">Fecho e perguntas.</aside>
+</section>
+
+
+</div>
+</div>
+
+<script>
+// Glossário de siglas — gera automaticamente a nota de rodapé em cada slide
+const SIGLAS={
+"EPD":"Encarregado de Proteção de Dados","RH":"recursos humanos","DE-SNS":"Direção Executiva do SNS","K77":"código ICPC-2 de insuficiência cardíaca","ETC":"equivalente a tempo completo","EXIGO":"consultora em saúde (promotora da bolsa)","SPMI":"Sociedade Portuguesa de Medicina Interna","SPC":"Sociedade Portuguesa de Cardiologia","SCl\u00ednico":"sistema de informação clínica do SNS",
+"PORTHOS":"estudo nacional de prevalência da insuficiência cardíaca (2024)","IQVIA":"empresa de análise de dados em saúde (relatório PAI-IC 2024)","CROM":"resultado reportado pelo clínico","ICHOM":"International Consortium for Health Outcomes Measurement","QALY":"ano de vida ajustado pela qualidade","IRR":"razão de taxas de incidência","MCID":"diferença mínima clinicamente importante","APAH":"Associação Portuguesa de Administradores Hospitalares","V4V":"Vision for Value","CollaboRATE":"medida de decisão partilhada (3 perguntas)","PACIC-PT":"Patient Assessment of Chronic Illness Care (versão PT)","EQ-5D-5L":"EuroQol 5 dimensões, 5 níveis","PIC":"Plano Individual de Cuidados","SClínico":"sistema de informação clínica do SNS","SOAP":"Subjetivo · Objetivo · Avaliação · Plano","Net Care Health Score":"PREM de 1 pergunta (adaptação do NPS)",
+"IC":"insuficiência cardíaca","IC-FEr":"IC com fração de ejeção reduzida (FEVE <50%)","IC-FEp":"IC com fração de ejeção preservada (FEVE ≥50%)","IC-FEmr":"IC com fração de ejeção ligeiramente reduzida (categoria ESC 2021, eliminada)","FEVE":"fração de ejeção do ventrículo esquerdo","FEr":"fração de ejeção reduzida","FEp":"fração de ejeção preservada",
+"ESC":"European Society of Cardiology","PAI-IC":"Percurso Assistencial Integrado da Insuficiência Cardíaca","PAI":"Percurso Assistencial Integrado","ULSLO":"Unidade Local de Saúde de Loures-Odivelas","USF":"Unidade de Saúde Familiar","HBA":"Hospital Beatriz Ângelo","UCC":"Unidade de Cuidados na Comunidade","ECSCP":"Equipa Comunitária de Suporte em Cuidados Paliativos","CSP":"cuidados de saúde primários","MGF":"Medicina Geral e Familiar","MI":"Medicina Interna","SU":"Serviço de Urgência","HD":"Hospital de Dia","UMR":"Unidade de Monitorização Remota","CA":"Conselho de Administração","CFT":"Comissão de Farmácia e Terapêutica","DPO":"encarregado de proteção de dados","SNS":"Serviço Nacional de Saúde","KPI":"indicador-chave de desempenho","GPT":"assistente de IA generativa (Generative Pre-trained Transformer)","IA":"inteligência artificial","UpHill":"plataforma da jornada digital do doente",
+"NT-proBNP":"fragmento N-terminal do pró-péptido natriurético tipo B","BNP":"péptido natriurético tipo B","PN":"péptidos natriuréticos",
+"FMT":"terapêutica médica fundamental (foundational medical therapy)","AMT":"terapêutica médica adicional","GDMT":"terapêutica médica guiada pelas guidelines (FMT + AMT)","GDIT":"terapêutica intervencional guiada pelas guidelines (dispositivos)",
+"IECA":"inibidor da enzima de conversão da angiotensina","ARNI":"inibidor do recetor da angiotensina e da neprilisina (sacubitril-valsartan)","ARA":"antagonista do recetor da angiotensina II","BB":"beta-bloqueador","ARM":"antagonista dos recetores mineralocorticoides","sMRA":"ARM esteroide","nsMRA":"ARM não esteroide (finerenona)","iSGLT2":"inibidor do cotransportador sódio-glicose 2","GLP-1 RA":"agonista do recetor do GLP-1","GLP-1":"agonista do recetor do péptido semelhante ao glucagon 1","AINE":"anti-inflamatório não esteroide","EV":"endovenoso","bid":"duas vezes por dia","HCTZ":"hidroclorotiazida",
+"DM2":"diabetes mellitus tipo 2","DM":"diabetes mellitus","DRC":"doença renal crónica","HTA":"hipertensão arterial","PAS":"pressão arterial sistólica","PA":"pressão arterial","FC":"frequência cardíaca","FR":"frequência respiratória","SpO₂":"saturação periférica de oxigénio","IMC":"índice de massa corporal","TFGe":"taxa de filtração glomerular estimada","UACR":"razão albumina/creatinina urinária","HbA1c":"hemoglobina glicada","TSAT":"saturação da transferrina","ECG":"eletrocardiograma","Rx":"radiografia","K⁺":"potássio","Na⁺":"sódio",
+"LVMI":"índice de massa do ventrículo esquerdo","RWT":"espessura relativa da parede","AE":"aurícula esquerda","E/e′":"razão entre a velocidade E mitral e a velocidade e′ do anel","PSAP":"pressão sistólica da artéria pulmonar","TRV":"velocidade de regurgitação tricúspide","VD":"ventrículo direito","VE":"ventrículo esquerdo","RS":"ritmo sinusal",
+"NYHA":"classe funcional da New York Heart Association","HFH":"hospitalização por insuficiência cardíaca","DHF":"IC descompensada (decompensated heart failure)","EAP":"edema agudo do pulmão","SCAI":"classificação de choque cardiogénico da Society for Cardiovascular Angiography and Interventions","CDI":"cardioversor-desfibrilhador implantável","TRC":"terapêutica de ressincronização cardíaca","CIED":"dispositivo cardíaco eletrónico implantável","LVAD":"dispositivo de assistência ventricular esquerda","MCS":"suporte circulatório mecânico","CPET":"prova de esforço cardiopulmonar","RHC":"cateterismo cardíaco direito","pVO₂":"consumo máximo de oxigénio","6MWT":"prova de marcha de 6 minutos","INTERMACS":"perfis do Interagency Registry for Mechanically Assisted Circulatory Support","ACP":"planeamento antecipado de cuidados","DAV":"diretiva antecipada de vontade","NECPAL":"instrumento de identificação de necessidades paliativas (NECPAL CCOMS-ICO©)","KCCQ-12":"Kansas City Cardiomyopathy Questionnaire, 12 itens","PHQ-9":"Patient Health Questionnaire-9 (rastreio de depressão)","PROM":"resultado reportado pelo doente","PREM":"experiência reportada pelo doente","CROM":"resultado reportado pelo clínico","LACE":"índice de risco de readmissão (Length of stay, Acuity, Comorbidity, Emergency visits)","EHMRG30-ST":"Emergency Heart Failure Mortality Risk Grade (7 e 30 dias)","SCORE2-HF":"score ESC de risco de IC a 10 anos sem doença aterosclerótica","SMART2-HF":"score ESC de risco de IC a 10 anos com doença aterosclerótica","LIFE-HF":"score ESC de risco em IC-FEr (FEVE ≤40%)","LIFE-Preserved":"score ESC de risco em IC-FEp (FEVE ≥50%)","MAGGIC":"Meta-Analysis Global Group in Chronic Heart Failure (score)","SHFM":"Seattle Heart Failure Model","ASCVD":"doença cardiovascular aterosclerótica","STRONG-HF":"ensaio de titulação intensiva nas 6 semanas pós-alta","HF-MDT":"equipa multidisciplinar de IC","MDT":"equipa multidisciplinar",
+"FA":"fibrilhação auricular","AVC":"acidente vascular cerebral","DPOC":"doença pulmonar obstrutiva crónica","SAOS":"síndrome de apneia obstrutiva do sono","OSA":"apneia obstrutiva do sono","CSA":"apneia central do sono","ASV":"servoventilação adaptativa","VSR":"vírus sincicial respiratório","COVID-19":"doença por coronavírus 2019","CV":"cardiovascular","EAM":"enfarte agudo do miocárdio","DAC":"doença arterial coronária","DAP":"doença arterial periférica","TUG":"teste Timed Up and Go","Dx":"diagnóstico","MCDT":"meios complementares de diagnóstico e terapêutica","CTH":"Consulta a Tempo e Horas","RGPD":"Regulamento Geral sobre a Proteção de Dados","QoL":"qualidade de vida","Teams":"Microsoft Teams","S0":"semana 0 (data da reunião de equipa)"
+};
+(function(){
+  const keys=Object.keys(SIGLAS).sort((a,b)=>b.length-a.length).map(k=>k.replace(/[.*+?^${}()|[\]\\\/]/g,'\\$&'));
+  const re=new RegExp('(?<![A-Za-z0-9À-ÿ₂⁺′-])('+keys.join('|')+')(?![A-Za-z0-9À-ÿ₂⁺′])','g');
+  document.querySelectorAll('.reveal .slides section').forEach((s,i)=>{
+    const clone=s.cloneNode(true); clone.querySelectorAll('aside.notes,.siglas').forEach(e=>e.remove());
+    const txt=clone.textContent; const seen=[]; let m;
+    re.lastIndex=0; while((m=re.exec(txt))){ if(!seen.includes(m[1])) seen.push(m[1]); }
+    if(!seen.length) return;
+    const div=document.createElement('div'); div.className='siglas';
+    div.innerHTML='<b>Siglas:</b> '+seen.map(k=>'<b>'+k+'</b> — '+SIGLAS[k]).join(' · ');
+    const notes=s.querySelector('aside.notes'); if(notes) s.insertBefore(div,notes); else s.appendChild(div);
+  });
+})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/notes/notes.min.js"></script>
+<script>
+Reveal.initialize({
+  hash:true, slideNumber:'c/t', progress:true, controls:true, center:true,
+  width:1280, height:720, margin:0.06,
+  transition:'slide', backgroundTransition:'fade',
+  defaultTiming:60, totalTime:600,
+  plugins:[RevealNotes]
+});
+</script>
+</body>
+</html>
